@@ -43,10 +43,11 @@ class AdapterHeroes : RecyclerView.Adapter<AdapterHeroes.ItemHeroesViewHolder>()
             heroes.tvNombre.text = heroeItem.nombre
             heroes.tvAnio.text = heroeItem.anioCreacion.toString()
             heroes.imgPortada.load(heroeItem.imagenLink)
-            heroes.cvItem.setOnClickListener{
+            heroes.cvItem.setOnClickListener {
                 val bundle = Bundle()
                 bundle.putInt("id", heroeItem.id)
-                Navigation.findNavController(heroes.root).navigate(R.id.action_listadoHeroeFragment_to_detalleFragment,bundle)
+                Navigation.findNavController(heroes.root)
+                    .navigate(R.id.action_listadoHeroeFragment_to_detalleFragment, bundle)
             }
         }
     }

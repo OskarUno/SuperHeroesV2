@@ -6,15 +6,14 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import coil.load
 import com.awakelab.oskar.superheroesv2.R
 import com.awakelab.oskar.superheroesv2.databinding.FragmentDetalleBinding
-import com.awakelab.oskar.superheroesv2.databinding.FragmentListadoHeroeBinding
 
 private const val ARG_PARAM1 = "id"
 
@@ -50,8 +49,10 @@ class DetalleFragment : Fragment() {
                 if (heroeDetalle != null) {
                     binding.tvId.text = heroeDetalle.id.toString()
                     binding.tvNombreD.text = heroeDetalle.nombre
-                    binding.tvAnioD.text =   getString(R.string.anio_creacion) + heroeDetalle.anioCreacion.toString()
-                    binding.tvOrigen.text =  getString(R.string.lugar_de_origen) + heroeDetalle.origen
+                    binding.tvAnioD.text =
+                        getString(R.string.anio_creacion) + heroeDetalle.anioCreacion.toString()
+                    binding.tvOrigen.text =
+                        getString(R.string.lugar_de_origen) + heroeDetalle.origen
                     binding.tvColor.text = getString(R.string.color_favorito) + heroeDetalle.color
                     binding.tvPoder.text = getString(R.string.habilidad) + heroeDetalle.poder
                     binding.imgHeroeD.load(heroeDetalle.imagenLink)
@@ -76,8 +77,6 @@ class DetalleFragment : Fragment() {
 
         val mensaje =
             "Hola\n\n Quiero que el siguiente super héroes, $nombreHeroe, aparezca, en la nueva edición de biografías animadas. \n\nNumero contacto:__________\n\nGracias."
-        //  val asunto  = getString(R.string.asuntoCorreo, producto, idParam)
-        //  val mensaje = getString(R.string.mensajeCorreo, producto, idParam)
 
         val emailIntent = Intent(Intent.ACTION_SEND)
         Uri.parse("mailto:").also { emailIntent.data = it }

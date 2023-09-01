@@ -25,7 +25,7 @@ class HeroeViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun getDetalleHeroeVM(id: Int?) = viewModelScope.launch {
-        if(id != null){
+        if (id != null) {
             repository.obtenerDetalleHeroe(id)
         }
     }

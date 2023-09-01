@@ -28,11 +28,11 @@ class Repository(
     }
 
     // Detalle Heroe
-    fun obtenerDetalleEntity(id:Int): LiveData<DetalleEntity> = heroeDao.getHeroeDetalle(id)
+    fun obtenerDetalleEntity(id: Int): LiveData<DetalleEntity> = heroeDao.getHeroeDetalle(id)
 
-    suspend fun obtenerDetalleHeroe(id:Int){
+    suspend fun obtenerDetalleHeroe(id: Int) {
         val res = heroeApi.getDataDetalle(id)
-        if(res.isSuccessful){
+        if (res.isSuccessful) {
             val detalleEntity = res.body()!!.copy()
             heroeDao.insertHeroeDetalle(detalleEntity.transDetalle())
         } else {
