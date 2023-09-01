@@ -14,7 +14,7 @@ fun HeroeDataClass.transEntity(): HeroeEntity = HeroeEntity(
     this.anioCreacion
 )
 
-fun DetalleDataClass.transDetalle() : DetalleEntity = DetalleEntity(
+fun DetalleDataClass.transDetalle(): DetalleEntity = DetalleEntity(
     this.id,
     this.nombre,
     this.origen,

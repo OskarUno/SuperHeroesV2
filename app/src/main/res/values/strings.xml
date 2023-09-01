@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">SuperHeroesV2</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="anio_creacion">Año Creación:</string>
+    <string name="nombre">Nombre</string>
+    <string name="_1999">1999</string>
+    <string name="listado_de_heroes">Listado de Heroes</string>
+    <string name="color">color</string>
+    <string name="poder">Poder</string>
+    <string name="_2000">2000</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="id_heroe_d">id_heroe_d</string>
+    <string name="sin_traducci_n">Sin traducción</string>
+    <string name="cuenta_con_traducci_n_al_espa_ol">Cuenta con traducción al español</string>
+    <string name="origen">origen</string>
+    <string name="supereroe">Supereroe</string>
+    <string name="imagen_super_heroe">Imagen super heroe</string>
+    <string name="imagen_detalle">Imagen detalle</string>
+    <string name="imagen_enviar_mail">imagen enviar mail</string>
+    <string name="lugar_de_origen">Lugar de Origen:  %1$s</string>
+    <string name="color_favorito">"Color Favorito: "</string>
+    <string name="habilidad">"Habilidad: "</string>
 </resources>

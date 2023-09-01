@@ -11,7 +11,7 @@
         android:id="@+id/tv_listado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Listado de Heroes"
+        android:text="@string/listado_de_heroes"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"

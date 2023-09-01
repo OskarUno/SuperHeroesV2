@@ -53,7 +53,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Supereroe"
+                            android:text="@string/supereroe"
                             android:textAlignment="center"
                             android:textSize="30sp"
                             android:textStyle="bold"
@@ -74,14 +74,15 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/tv_nombre_d"
                             tools:ignore="ImageContrastCheck"
-                            tools:src="@tools:sample/avatars" />
+                            tools:src="@tools:sample/avatars"
+                            android:contentDescription="@string/imagen_detalle" />
 
                         <TextView
                             android:id="@+id/tv_origen"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="origen"
+                            android:text="@string/origen"
                             android:textAlignment="center"
                             android:textSize="20sp"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +94,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Cuenta con traducción al español"
+                            android:text="@string/cuenta_con_traducci_n_al_espa_ol"
                             android:textAlignment="center"
                             android:textSize="20sp"
                             android:visibility="invisible"
@@ -107,7 +108,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Sin traducción"
+                            android:text="@string/sin_traducci_n"
                             android:textAlignment="center"
                             android:textSize="20sp"
                             android:visibility="invisible"
@@ -121,7 +122,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="3dp"
                             android:layout_marginBottom="3dp"
-                            android:text="id_heroe_d"
+                            android:text="@string/id_heroe_d"
                             android:visibility="invisible"
                             app:layout_constraintBottom_toTopOf="@+id/img_heroe_d"
                             app:layout_constraintStart_toStartOf="parent" />
@@ -153,7 +154,7 @@
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="5dp"
-                        android:text="Mensaje"
+                        android:text="@string/mensaje"
                         android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -162,14 +163,15 @@
 
                     <ImageButton
                         android:id="@+id/img_mail"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
                         android:layout_marginStart="16dp"
                         android:src="@drawable/baseline_mail_24"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/tv_msj_mail"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:contentDescription="@string/imagen_enviar_mail" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -203,7 +205,7 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="4dp"
                             android:layout_marginEnd="8dp"
-                            android:text="1999"
+                            android:text="@string/_2000"
                             android:textSize="16sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -217,7 +219,7 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
                             android:padding="15dp"
-                            android:text="Poder"
+                            android:text="@string/poder"
                             android:textAlignment="center"
                             android:textSize="16sp"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -232,7 +234,7 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
-                            android:text="color"
+                            android:text="@string/color"
                             android:textSize="16sp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"

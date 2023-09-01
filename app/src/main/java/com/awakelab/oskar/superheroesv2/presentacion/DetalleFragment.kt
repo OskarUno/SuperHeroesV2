@@ -48,11 +48,10 @@ class DetalleFragment : Fragment() {
                 if (heroeDetalle != null) {
                     binding.tvId.text = heroeDetalle.id.toString()
                     binding.tvNombreD.text = heroeDetalle.nombre
-                    binding.tvAnioD.text =
-                        getString(R.string.anio_creacion) + heroeDetalle.anioCreacion.toString()
-                    binding.tvOrigen.text = "Lugar de Origen: " + heroeDetalle.origen
-                    binding.tvColor.text = "Color Favorito: " + heroeDetalle.color
-                    binding.tvPoder.text = "Habilidad: " + heroeDetalle.poder
+                    binding.tvAnioD.text =   getString(R.string.anio_creacion) + heroeDetalle.anioCreacion.toString()
+                    binding.tvOrigen.text =  getString(R.string.lugar_de_origen) + heroeDetalle.origen
+                    binding.tvColor.text = getString(R.string.color_favorito) + heroeDetalle.color
+                    binding.tvPoder.text = getString(R.string.habilidad) + heroeDetalle.poder
                     binding.imgHeroeD.load(heroeDetalle.imagenLink)
                     if (heroeDetalle.traduccion) {
                         binding.tvTraduccionTrue.visibility = View.VISIBLE

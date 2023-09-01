@@ -29,7 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="Nombre"
+                android:text="@string/nombre"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
                 android:id="@+id/tv_anio"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="1999"
+                android:text="@string/_1999"
                 android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,9 +51,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="130dp"
                 android:layout_marginTop="16dp"
+                android:contentDescription="@string/imagen_super_heroe"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck"
                 tools:srcCompat="@tools:sample/avatars" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
