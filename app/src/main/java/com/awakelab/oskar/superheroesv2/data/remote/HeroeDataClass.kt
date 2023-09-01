@@ -11,7 +11,6 @@ data class HeroeDataClass(
     @SerializedName("Año_creacion" ) var anioCreacion : Int
 )
 
-
 /*
     {
         "id": 1,
