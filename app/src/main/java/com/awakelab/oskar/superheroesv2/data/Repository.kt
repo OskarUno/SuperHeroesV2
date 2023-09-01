@@ -2,6 +2,7 @@ package com.awakelab.oskar.superheroesv2.data
 
 import android.util.Log
 import androidx.lifecycle.LiveData
+import com.awakelab.oskar.superheroesv2.data.local.DetalleEntity
 import com.awakelab.oskar.superheroesv2.data.local.HeroeDao
 import com.awakelab.oskar.superheroesv2.data.local.HeroeEntity
 import com.awakelab.oskar.superheroesv2.data.remote.HeroeApi
@@ -23,6 +24,19 @@ class Repository(
             }
         } else {
             Log.e("Repository", respuesta.errorBody().toString())
+        }
+    }
+
+    // Detalle Heroe
+    fun obtenerDetalleEntity(id:Int): LiveData<DetalleEntity> = heroeDao.getHeroeDetalle(id)
+
+    suspend fun obtenerDetalleHeroe(id:Int){
+        val res = heroeApi.getDataDetalle(id)
+        if(res.isSuccessful){
+            val detalleEntity = res.body()!!.copy()
+            heroeDao.insertHeroeDetalle(detalleEntity.transDetalle())
+        } else {
+            Log.e("Repository", res.errorBody().toString())
         }
     }
 }

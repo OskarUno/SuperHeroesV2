@@ -17,6 +17,10 @@ interface HeroeDao {
 
 
     //Detalle Heroe
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertHeroeDetalle(detalleEntity: DetalleEntity)
 
+    @Query("SELECT * FROM tabla_heroe_detalle WHERE id = :id")
+    fun getHeroeDetalle(id :Int) : LiveData<DetalleEntity>
 
 }

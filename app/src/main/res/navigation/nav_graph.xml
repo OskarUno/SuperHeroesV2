@@ -9,5 +9,14 @@
         android:id="@+id/listadoHeroeFragment"
         android:name="com.awakelab.oskar.superheroesv2.presentacion.ListadoHeroeFragment"
         android:label="fragment_listado_heroe"
-        tools:layout="@layout/fragment_listado_heroe" />
+        tools:layout="@layout/fragment_listado_heroe" >
+        <action
+            android:id="@+id/action_listadoHeroeFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.awakelab.oskar.superheroesv2.presentacion.DetalleFragment"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" />
 </navigation>

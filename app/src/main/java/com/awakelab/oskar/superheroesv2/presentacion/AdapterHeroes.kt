@@ -1,9 +1,12 @@
 package com.awakelab.oskar.superheroesv2.presentacion
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.awakelab.oskar.superheroesv2.R
 import com.awakelab.oskar.superheroesv2.data.local.HeroeEntity
 import com.awakelab.oskar.superheroesv2.databinding.ItemHeroeBinding
 
@@ -38,7 +41,13 @@ class AdapterHeroes : RecyclerView.Adapter<AdapterHeroes.ItemHeroesViewHolder>()
         RecyclerView.ViewHolder(heroes.root) {
         fun render(heroeItem: HeroeEntity) {
             heroes.tvNombre.text = heroeItem.nombre
+            heroes.tvAnio.text = heroeItem.anioCreacion.toString()
             heroes.imgPortada.load(heroeItem.imagenLink)
+            heroes.cvItem.setOnClickListener{
+                val bundle = Bundle()
+                bundle.putInt("id", heroeItem.id)
+                Navigation.findNavController(heroes.root).navigate(R.id.action_listadoHeroeFragment_to_detalleFragment,bundle)
+            }
         }
     }
 }
