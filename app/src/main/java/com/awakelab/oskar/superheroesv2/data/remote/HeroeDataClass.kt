@@ -3,12 +3,12 @@ package com.awakelab.oskar.superheroesv2.data.remote
 import com.google.gson.annotations.SerializedName
 
 data class HeroeDataClass(
-    @SerializedName("id"           ) var id           : Int?    = null,
-    @SerializedName("nombre"       ) var nombre       : String? = null,
-    @SerializedName("origen"       ) var origen       : String? = null,
-    @SerializedName("imagenLink"   ) var imagenLink   : String? = null,
-    @SerializedName("poder"        ) var poder        : String? = null,
-    @SerializedName("Año_creacion" ) var anioCreacion : Int?    = null
+    @SerializedName("id"           ) var id           : Int,
+    @SerializedName("nombre"       ) var nombre       : String,
+    @SerializedName("origen"       ) var origen       : String,
+    @SerializedName("imagenLink"   ) var imagenLink   : String,
+    @SerializedName("poder"        ) var poder        : String,
+    @SerializedName("Año_creacion" ) var anioCreacion : Int
 )
 
 
