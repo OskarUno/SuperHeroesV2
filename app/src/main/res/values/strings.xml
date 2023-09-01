@@ -17,7 +17,7 @@
     <string name="imagen_super_heroe">Imagen super heroe</string>
     <string name="imagen_detalle">Imagen detalle</string>
     <string name="imagen_enviar_mail">imagen enviar mail</string>
-    <string name="lugar_de_origen">Lugar de Origen:  %1$s</string>
+    <string name="lugar_de_origen">Lugar de Origen: "</string>
     <string name="color_favorito">"Color Favorito: "</string>
     <string name="habilidad">"Habilidad: "</string>
 </resources>

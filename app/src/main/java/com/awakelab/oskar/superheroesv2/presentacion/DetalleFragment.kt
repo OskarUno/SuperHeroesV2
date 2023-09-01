@@ -1,5 +1,6 @@
 package com.awakelab.oskar.superheroesv2.presentacion
 
+import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
@@ -42,6 +43,7 @@ class DetalleFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     private fun initListener() {
         idParam?.let { it ->
             heroeVM.detalleLiveData(it).observe(viewLifecycleOwner) { heroeDetalle ->
